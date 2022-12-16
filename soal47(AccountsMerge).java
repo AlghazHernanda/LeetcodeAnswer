@@ -38,10 +38,10 @@ class Solution {
         }
         return result;
     }
-    private String find(String s, Map<String, String> map){
-        if(!map.get(s).equals(s)){
-            map.put(s, find(map.get(s), map));
-        }
-        return map.get(s);
-    }
+    // private String find(String s, Map<String, String> map){
+    //     if(!map.get(s).equals(s)){
+    //         map.put(s, find(map.get(s), map));
+    //     }
+    //     return map.get(s);
+    // }
 }
