@@ -23,10 +23,10 @@ class Solution {
         }
         // Step 3: tambahkan uf.(Actually merge different lines)
         for(List<String> account : accounts){
-            String root = find(account.get(1), parent); //// find the root e-mail for the first email.
+            String root = find(account.get(1), parent); //// cari root buat email pertama
             if(!uf.containsKey(root)) uf.put(root, new TreeSet<String>());
             for(int i = 1; i < account.size(); i++)
-                uf.get(root).add(account.get(i)); // Add all emails in this account to uf.
+                uf.get(root).add(account.get(i)); // tambakan semua email di akun ini ke uf.
         }
         // Step 4: buat hasil List.
         List<List<String>> result = new ArrayList<>();
