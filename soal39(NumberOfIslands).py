@@ -13,9 +13,9 @@ class Solution(object):
         if not grid or not grid[0]:
             return 0
         res = 0
-        for i in range(len(grid)):
-            for j in range(len(grid[0])):
-                if grid[i][j] == '1':
-                    dfs(i, j)
-                    res += 1
+        # for i in range(len(grid)):
+        #     for j in range(len(grid[0])):
+        #         if grid[i][j] == '1':
+        #             dfs(i, j)
+        #             res += 1
         return res
