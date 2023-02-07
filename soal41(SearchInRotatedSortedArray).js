@@ -18,8 +18,10 @@ var search = function(nums, target) {
     // First step is to find the pivot where the
     // array is rotated
     while (left < right) {
+
         // Middle pointer
         let middle = left + parseInt((right - left) / 2);
+
         // If the element at the mid is greater than
         // the element at the right then we can say that
         // the array is rotated after middle index
@@ -31,11 +33,13 @@ var search = function(nums, target) {
             right = middle;
         }
     }
+
     // After the above loop is completed, then the
     // left index will point to the pivot
     const pivot = left;
     left = 0;
     right = nums.length - 1;
+
     // Now we will find in which half of the array,
     // our target is present
     if (target >= nums[pivot] && target <= nums[right]) {
