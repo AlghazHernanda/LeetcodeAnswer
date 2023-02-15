@@ -13,6 +13,12 @@ class Solution:
         else:
             lc = sum([1 for i in range(l, r+1) if nums[i] == lm])
             rc = sum([1 for i in range(l, r+1) if nums[i] == rm])
+
+            mid = (l+r) // 2
+        lm = self.helper(nums, l, mid)
+        rm = self.helper(nums, mid+1, r)
+
+    
             if lc > rc:
                 return lm
             return rm
