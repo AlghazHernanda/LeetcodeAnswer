@@ -7,6 +7,7 @@ class Solution:
        
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
         
+        # jika panjang prerequisites == 0
         if len(prerequisites) == 0:
             return True
         
