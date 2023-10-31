@@ -28,6 +28,7 @@ class Solution:
         
         count = 0 
 
+        # jika panjang Que masih lebih dari 0, jalankan looping ini
         while len(queue) > 0:
             current = queue.popleft()
             
