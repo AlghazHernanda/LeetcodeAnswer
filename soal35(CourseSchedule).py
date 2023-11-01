@@ -33,6 +33,7 @@ class Solution:
             current = queue.popleft()
             
             if indegree[current] == 0:
+                # count + 1
                 count += 1
                 
             if not graph[current]:
