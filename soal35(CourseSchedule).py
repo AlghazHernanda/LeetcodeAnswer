@@ -32,6 +32,7 @@ class Solution:
         while len(queue) > 0:
             current = queue.popleft()
             
+            # jika index indegree == 0
             if indegree[current] == 0:
                 # count + 1
                 count += 1
