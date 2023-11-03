@@ -37,6 +37,7 @@ class Solution:
                 # count + 1
                 count += 1
                 
+            # jika bukan graph 
             if not graph[current]:
                 print(f'{current} doesnt exit in {graph}')
                 continue
