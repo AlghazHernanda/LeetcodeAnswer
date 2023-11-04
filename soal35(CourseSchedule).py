@@ -47,5 +47,5 @@ class Solution:
                 if indegree[neighbour] == 0:
                     queue.append(neighbour)
                 
-        
+        # jadikan True kalo count == numCourses
         return True if count == numCourses else False
