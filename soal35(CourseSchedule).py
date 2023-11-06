@@ -41,7 +41,8 @@ class Solution:
             if not graph[current]:
                 print(f'{current} doesnt exit in {graph}')
                 continue
-                        
+
+                      # jika neighbpur di graph
             for neighbour in graph[current]:
                 indegree[neighbour] -= 1
                 if indegree[neighbour] == 0:
