@@ -3,6 +3,8 @@ class Solution:
     def majorityElement(self, nums: List[int]) -> int:
         return self.helper(nums, 0, len(nums)-1)
     def helper(self, nums, l, r):
+
+        # jika l == r maka jalankan if ini
         if l == r:
             return nums[l]
         mid = (l+r) // 2
