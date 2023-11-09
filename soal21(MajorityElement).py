@@ -7,6 +7,8 @@ class Solution:
         # jika l == r maka jalankan if ini
         if l == r:
             return nums[l]
+        
+        # cari mid adalah kanan tambah kiri bagi 2
         mid = (l+r) // 2
         lm = self.helper(nums, l, mid)
         rm = self.helper(nums, mid+1, r)
