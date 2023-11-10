@@ -10,7 +10,9 @@ class Solution:
         
         # cari mid adalah kanan tambah kiri bagi 2
         mid = (l+r) // 2
+        # kiri
         lm = self.helper(nums, l, mid)
+        # kanan
         rm = self.helper(nums, mid+1, r)
         if lm == rm:
             return lm
