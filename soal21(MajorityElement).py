@@ -14,6 +14,8 @@ class Solution:
         lm = self.helper(nums, l, mid)
         # kanan
         rm = self.helper(nums, mid+1, r)
+
+        # jika kiri == kanan
         if lm == rm:
             return lm
         else:
