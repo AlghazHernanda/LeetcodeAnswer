@@ -4,6 +4,7 @@ class Solution:
     def search(self, nums: List[int], target: int) -> int:
         return self.helper(nums, 0, len(nums)-1, target)
     def helper(self, nums, l, r, target):
+        # jika kira lebih besar dari kanan
         if l > r:
             return -1
         if l == r:
