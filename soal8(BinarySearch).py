@@ -7,6 +7,8 @@ class Solution:
         # jika kira lebih besar dari kanan
         if l > r:
             return -1
+        
+        # jika kiri sama dengan kanan
         if l == r:
             if nums[l] == target:
                 return l
