@@ -10,6 +10,7 @@ class Solution:
         
         # jika kiri sama dengan kanan
         if l == r:
+            # jika num[l] == target
             if nums[l] == target:
                 return l
             return -1
