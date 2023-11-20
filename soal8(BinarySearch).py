@@ -12,6 +12,7 @@ class Solution:
         if l == r:
             # jika num[l] == target
             if nums[l] == target:
+                # maka return 1
                 return l
             return -1
         mid = (l+r) // 2
