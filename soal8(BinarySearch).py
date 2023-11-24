@@ -15,6 +15,8 @@ class Solution:
                 # maka return 1
                 return l
             return -1
+        
+        # rumus mid
         mid = (l+r) // 2
         if nums[mid] == target:
             return mid
