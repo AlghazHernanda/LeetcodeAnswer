@@ -18,6 +18,7 @@ class Solution:
         
         # rumus mid
         mid = (l+r) // 2
+        # jika mid sama dengan target
         if nums[mid] == target:
             return mid
         elif nums[mid] > target:
