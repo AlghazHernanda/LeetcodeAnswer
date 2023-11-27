@@ -21,6 +21,7 @@ class Solution:
         # jika mid sama dengan target
         if nums[mid] == target:
             return mid
+        # jika mid lebih besar dari target
         elif nums[mid] > target:
             return self.helper(nums, l, mid-1, target)
         else:
