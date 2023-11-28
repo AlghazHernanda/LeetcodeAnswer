@@ -24,5 +24,6 @@ class Solution:
         # jika mid lebih besar dari target
         elif nums[mid] > target:
             return self.helper(nums, l, mid-1, target)
+        # kalo lebih kecil
         else:
             return self.helper(nums, mid+1, r, target)
