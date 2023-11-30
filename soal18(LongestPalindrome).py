@@ -4,6 +4,7 @@
 class Solution:
     def longestPalindrome(self, s: str) -> int:
         a = set()
+        # jika l ada pada s
         for l in s:
             if l not in a:
                 a.add(l)
