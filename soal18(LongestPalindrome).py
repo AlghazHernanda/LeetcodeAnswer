@@ -6,6 +6,7 @@ class Solution:
         a = set()
         # jika l ada pada s
         for l in s:
+            # jika l tidak ada di a
             if l not in a:
                 a.add(l)
             else:
