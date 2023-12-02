@@ -9,6 +9,7 @@ class Solution:
             # jika l tidak ada di a
             if l not in a:
                 a.add(l)
+            # jalankan jika l ada di a
             else:
                 a.remove(l)
         return len(s) - len(a) + 1 if len(a) else len(s)
