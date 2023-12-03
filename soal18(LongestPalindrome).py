@@ -11,5 +11,6 @@ class Solution:
                 a.add(l)
             # jalankan jika l ada di a
             else:
+                # delete l
                 a.remove(l)
         return len(s) - len(a) + 1 if len(a) else len(s)
