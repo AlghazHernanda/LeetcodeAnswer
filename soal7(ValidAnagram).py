@@ -3,6 +3,7 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         h = {}
+        # looing i ada pada s
         for i in s:
             h[i] = h.get(i, 0) + 1
         for j in t:
