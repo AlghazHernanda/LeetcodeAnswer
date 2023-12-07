@@ -6,6 +6,7 @@ class Solution:
         # looing i ada pada s
         for i in s:
             h[i] = h.get(i, 0) + 1
+        # looping j ada pada t
         for j in t:
             if h.get(j, 0) == 0:
                 return False
