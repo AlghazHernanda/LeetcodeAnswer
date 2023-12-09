@@ -12,6 +12,7 @@ class Solution:
                 return False
             else:
                 h[j] -= 1
+        # jika k ada pada h
         for k in h:
             if h[k] >= 1:
                 return False
