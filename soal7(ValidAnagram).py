@@ -14,6 +14,7 @@ class Solution:
                 h[j] -= 1
         # jika k ada pada h
         for k in h:
+            # jika h[k] lebih besar dari 1
             if h[k] >= 1:
                 return False
         return True
