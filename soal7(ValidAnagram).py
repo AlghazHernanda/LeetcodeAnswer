@@ -16,5 +16,6 @@ class Solution:
         for k in h:
             # jika h[k] lebih besar dari 1
             if h[k] >= 1:
+                # return false
                 return False
         return True
